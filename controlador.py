@@ -7,6 +7,7 @@ class Controlador:
         self.obj_modelo = ""
         self.obj_vista=obj_vista
         self.obj_bd=Base_datos()
+        self.chofer = None
 
 
 
@@ -15,7 +16,7 @@ class Controlador:
         print(info_datos)
 
         self.obj_modelo=Carro(info_datos[0],info_datos[1],info_datos[2],info_datos[3],info_datos[4])
-        self.db.guardar_info(self.obj_modelo,self.chofer)
+        self.obj_bd.guardar_info(self.obj_modelo,self.chofer)
 
         
     def confirmar_guardado(self):

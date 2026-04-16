@@ -1,15 +1,15 @@
 class Carro:
-    def __init__(self,n_placa,modelo,color,fecha_entrada,hora_entrada):
-        self.placa = n_placa
+    def __init__(self,placa,modelo,color,fecha_entrada,hora_entrada):
+        self.placa = placa
         self.modelo = modelo 
         self.color = color
         self.fecha_entrada = fecha_entrada
         #self.fecha_salida = fecha_salida
         self.hora_entrada = hora_entrada
 
-    def get_n_placa(self):
+    def get_placa(self):
         return self.placa
-    def set_n_placa(self,nueva_placa):
+    def set_placa(self,nueva_placa):
         self.placa = nueva_placa
 
     def get_modelo(self):
